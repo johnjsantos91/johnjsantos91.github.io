@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Health Care</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<header>
+  <h2>Health Care Inequality</h2>
+
+<img src="kids.gif" alt="room1" width="600" height="500">
+</header>
+
+<section>
+  <nav>
+    <ul>
+<p>Issues</p>
+      <li><a href="room1.html">Missing and murdered Indigenous Women (MMIW)</a></li><br>
+      <li><a href="room4.html">Voting Rights</a></li><br>
+      <li><a href="room6.html">Healthcare</a></li><br>
+      <li><a href="room8.html">Poverty and Unemployment</a></li><br>
+      <li><a href="room10.html">Land Exploitation</a></li><br>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Health Care Inequality</h1>
+    <p>Despite legal obligations of the United States to provide Health care to Native Americans,  They still lag behind compared to other groups.</p>
+     
+    <p>Native Americans have a life expectancy that is 4.4 years less than other races in the United States.</p>
+
+    <p>Indigenous peoples experience disproportionately high levels of maternal and infant mortality, malnutrition, HIV/AIDS and diseases such as tuberculosis and diabetes.</p>
+
+
+  </article>
+</section>
+
+<footer>
+  <li><a href="room7.html">Native American Health Center</a></li>
+<li><a href="room0.html">More Organization and Charities</a></li>
+</footer>
+
+</body>
+</html>

@@ -14,61 +14,438 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+</style>
+
+
+
 </head>
 
 <body>
 
-<div class="container-fluid" style="background-color:#000000";>
+<div class="container-fluid" style="background-color:#faf0e6";>
 
 <nav class="navbar navbar-expand-sm justify-content-center">
 
-<a href="index.html" role="button" class="btn btn-outline-info">Home</a>
-<a href="glitchart.html" role="button" class="btn btn-outline-info">Glitch Art</a>
-<a href="minecraft.html" role="button" class="btn btn-outline-info">Mine Craft</a>
-<a href="meme.html" role="button" class="btn btn-outline-info">Meme</a>
-<a href="netart/index.html" role="button" class="btn btn-outline-info">Netart</a>
-<a href="runwayml.html" role="button" class="btn btn-outline-info">RunwayML</a>
+<a href="index.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">Home</a>
+
+<a href="glitchart.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">Glitch Art</a>
+
+<a href="minecraft.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">Mine Craft</a>
+
+<a href="netart/index.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">Netart</a>
+
+<a href="runwayml.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">RunwayML</a>
+
 <div class="dropdown">
-  <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown">
+  <button type="button" style="font-family:Didot;" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown">
     p5.js
   </button>
   <div class="dropdown-menu">
-    <a class="dropdown-item" href="sketch.html">Sketch</a>
-    <a class="dropdown-item" href="diyps.html">DIYPS</a>
-    <a class="dropdown-item" href="game.html">Game</a>
+    <a class="dropdown-item" href="sketch.html" style="font-family:Didot;">Sketch</a>
+    <a class="dropdown-item" href="diyps.html" style="font-family:Didot;">DIYPS</a>
+    <a class="dropdown-item" href="game.html" style="font-family:Didot;">Game</a>
   </div>
 </div>
-<a href="final.html" role="button" class="btn btn-outline-info">NAL</a>
+<a href="final.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">NAL</a>
 
-<a href="video.html" role="button" class="btn btn-outline-info">Video</a>
+<a href="video.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">Video</a>
 
-<a href="bio.html" role="button" class="btn btn-outline-info">BIO</a>
+<a href="bio.html" role="button" class="btn btn-outline-dark" style="font-family:Didot;">About</a>
+
 
 </nav>
 
 
-<div class="jumbotron jumbotron-fluid" style="background-color:#1f2833;">
+<div class="jumbotron jumbotron-fluid" style="background-color:#faf0e6;">
   <div class="container">
 
-<body style="background-color:black;">
+<body style="background-color:#faf0e6;">
 
-<h1 style="color:#66fcf1; font-family:American Typewriter;">RunwayML AdaIN/Style Gan2</h1> 
+<h1 style="color:#000000; font-family:Didot;">RunwayML AdaIN/Style Gan2</h1> 
 <br>
 
-<p style="color:#c5c6c7; font-size:100%; font-family:American Typewriter;">The objective of this project is to transform images using RunwayML Style GAN2 and AdaIN-Style Transfer.</p>
+<p style="color:#000000; font-size:100%; font-family:Didot;">The objective of this project is to transform images using RunwayML Style GAN2 and AdaIN-Style Transfer.</p>
 
-<p style="color:#c5c6c7; font-size:100%; font-family:American Typewriter;">My series of RunwayML images are about futuristic landscapes.  I used two landscape art pieces from my favorite illustrator and combined them together using RunwayML to create different sci-fi like effects.</p>
+<p style="color:#000000; font-size:100%; font-family:Didot;">My series of RunwayML images are about futuristic landscape setting.  I used two landscape art pieces from my favorite illustrator and combined them together using RunwayML to create different sci-fi like effects.</p>
 <br>
 
-<p style="color:#c5c6c7; font-size:90%; font-family:American Typewriter;">Mediums Used:​​ RunwayML (AdaIN-Stle Transfer + GAN2)</p>
+<p style="color:#000000; font-size:90%; font-family:Didot;">Mediums Used:​​ RunwayML (AdaIN-Stle Transfer + GAN2)</p>
 
 
-<img src="https://johnjsantos91.github.io/land/land1.png" class="rounded img-fluid mx-auto d-block" alt="Land 1" width="400" height="400">
-<br>
-<img src="https://johnjsantos91.github.io/land/land2.png" class="rounded img-fluid mx-auto d-block" alt="Land 2" width="400" height="400">
-<br>
-<img src="https://johnjsantos91.github.io/land/land4.png" class="rounded img-fluid mx-auto d-block" alt="Land 4" width="400" height="400">
-<br>
+<img id="myImg" src="https://johnjsantos91.github.io/land/land1.png" alt="Snow" class="img-fluid" width="500" height="275"
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close2">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+<img id="myImg2" src="https://johnjsantos91.github.io/land/land2.png" alt="Snow" class="img-fluid" width="500" height="275">
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+  <span class="close2">&times;</span>
+  <img class="modal-content" id="img02">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal2");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+
+<img id="myImg3" src="https://johnjsantos91.github.io/land/land4.png" alt="Snow" class="img-fluid" class="mx-auto d-block" vspace=5 hspace=245 width="500" height="275">
+
+<!-- The Modal -->
+<div id="myModal3" class="modal">
+  <span class="close3">&times;</span>
+  <img class="modal-content" id="img03">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal3");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 
 
 </div>
